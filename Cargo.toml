@@ -1,0 +1,15 @@
+[package]
+name = "assignment"
+version = "0.1.0"
+edition = "2024"
+default-run = "assignment"
+
+[dependencies]
+clap = { version = "4.6.7", features = ["derive"] }
+parking_lot = "0.12.5"
+scc = "3.8.8"
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros", "fs", "io-util", "io-std"] }
+tokio-stream = "0.1.19"
+tokio-util = { version = "0.7.20", features = ["codec"] }
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
